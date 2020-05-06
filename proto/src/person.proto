@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package person;
+option go_package = "src/person";
+
+
+message PersonMessage {
+    int32 id = 1;
+    string name = 2;
+    bool is_adult = 3;
+    repeated int32 luck_numbers = 4;
+}
+
+
+
